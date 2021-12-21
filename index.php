@@ -34,7 +34,12 @@
 		case 'contact':
 			require_once('controllers/ContactController.php');	
 			$controller = new ContactController();
-			break;	
+			break;
+
+        case 'goodNews':
+            require_once('controllers/GoodNewsController.php');
+            $controller = new GoodNewsController();
+            break;
 		default: # Par défaut, le contrôleur de l'accueil est sélectionné
 			require_once('controllers/HomeController.php');
 			$controller = new HomeController();
